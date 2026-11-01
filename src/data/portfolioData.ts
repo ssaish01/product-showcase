@@ -1,5 +1,5 @@
-import aiCopilotImg from './assets/images/case_study_ai_copilot_1793434636073.jpg';
-import mobileCommerceImg from './assets/images/case_study_mobile_commerce_1793434637941.jpg';
+import aiCopilotImg from '../assets/images/case_study_ai_copilot_1793434636073.jpg'
+import mobileCommerceImg from '../assets/images/case_study_mobile_commerce_1793434637941.jpg';
 
 export interface CaseStudy {
   id: string;

@@ -119,7 +119,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: "Critical Sovereign Infrastructure: 0-to-1 High-Availability Platform",
     subtitle: "Cabinet Secretariat (Govt. of India) · Leading technical product ownership for population-scale, regulatory-compliant government infrastructure.",
     category: "GovTech & Enterprise",
-    image: "${import.meta.env.BASE_URL}case_study_ai_copilot_1793434636073.jpg",
+    image: "src/assets/images/case_study_ai_copilot_1793434636073.jpg",
     timeline: "3 month · 0-to-1 Architecture & Scale",
     role: "Technical Product Owner / Deputy Field Officer (Tech)",
     team: "Multi-Disciplinary Technical Specialists, Systems Engineers, Security & Operations Teams",

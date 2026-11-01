@@ -596,7 +596,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   title: "Tata Consultancy Services (TCS): Enterprise API Modernization",
   subtitle: "Systems Engineer · API integrations, technical debt reduction and agile sprint execution for global enterprise clients.",
   category: "GovTech & Enterprise",
-  image: "case_study_mobile_commerce_1793434637941.jpg",
+  image: mobileCommerceImg,
   timeline: "6-Month · Enterprise Sprint Execution",
   role: "Systems Engineer",
   team: "Cross-Functional Agile Team (Engineers, QA, Solution Architects)",

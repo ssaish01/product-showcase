@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowUpRight, Compass, Sparkles } from 'lucide-react';
 import { PORTFOLIO_HERO } from '../data/portfolioData';
-
+import myphotoImg from '../assets/images/myPhoto.jpeg';
 interface HeroProps {
   onOpenContact: () => void;
   onExploreCaseStudies: () => void;
@@ -78,7 +78,7 @@ export default function Hero({ onOpenContact, onExploreCaseStudies, onViewPhilos
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <div className="relative group w-full max-w-[380px] aspect-square rounded-2xl overflow-hidden border border-white/[0.12] bg-white/[0.03] shadow-2xl shadow-black/80">
               <img
-                src="myPhoto.jpeg"
+                src={myphotoImg}
                 alt="Aishwarya Sriram Srinivasachary — Technical Product Manager"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-center filter grayscale contrast-105 group-hover:grayscale-0 transition-all duration-700 ease-out"

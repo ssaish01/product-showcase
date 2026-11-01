@@ -1,6 +1,12 @@
 import aiCopilotImg from '../assets/images/case_study_ai_copilot_1793434636073.jpg'
+import ragImg from '../assets/images/govai_rag_engine_1793529336367.jpg';
+import chainImg from '../assets/images/govchain_id_ledger_1793529336374.jpg';
+import apiImg from '../assets/images/national_api_gateway_1793529336447.jpg';
+import threatImg from '../assets/images/zerotrust_cyber_engine_1793529337193.jpg';
+import cloudImg from '../assets/images/govcloud_edge_mesh_1793529339629.jpg';
+import predImg from '../assets/images/predictive_gov_intel_1793529337702.jpg';
 import mobileCommerceImg from '../assets/images/case_study_mobile_commerce_1793434637941.jpg';
-
+import fintechImg from '../assets/images/case_study_fintech_treasury_1793434638487.jpg';
 export interface CaseStudy {
   id: string;
   title: string;
@@ -188,7 +194,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: "National Inter-Departmental LLM Knowledge Graph (GovAI-RAG Engine)",
     subtitle: "Cabinet Secretariat (Govt. of India) · Led the development of GovAI-RAG Engine, a sovereign Generative AI and semantic search engine for cross-ministerial intelligence synthesis.",
     category: "AI & Data",
-    image: mobileCommerceImg,
+    image: ragImg,
     timeline: "5-Month · Deep Engineering Sprint",
     role: "Technical Product Owner / Deputy Field Officer (Tech)",
     team: "AI Researchers, Data Engineers, Security Compliance & Operations Teams",
@@ -255,7 +261,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   title: "Zero-Knowledge Cryptographic Interoperability Ledger (GovChain-ID)",
   subtitle: "Cabinet Secretariat (Govt. of India) · Built a permissioned blockchain and zero-knowledge proof framework to secure inter-ministerial audits.",
   category: "Security & Cryptography",
-  image: "${import.meta.env.BASE_URL}case_study_ai_copilot_1793434636073.jpg",
+  image: chainImg,
   timeline: "2-Month · Specialized Cryptographic Sprint",
   role: "Technical Product Owner / Deputy Field Officer (Tech)",
   team: "Cryptographic Engineers, Blockchain Specialists, Security Auditors & Legal Compliance Teams",
@@ -322,7 +328,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   title: "Autonomous Predictive Macro-Risk & Threat Vector System (Predictive-Gov)",
   subtitle: "Cabinet Secretariat (Govt. of India) · Deployed real-time streaming pipelines and machine learning anomaly detection to forecast institutional vulnerabilities.",
   category: "AI & Data",
-  image: "${import.meta.env.BASE_URL}case_study_ai_copilot_1793434636073.jpg",
+  image: predImg,
   timeline: "6-Month Data Science & Streaming Sprint",
   role: "Technical Product Owner / Deputy Field Officer (Tech)",
   team: "Data Scientists, Distributed Systems Engineers, Risk Analysts & Infrastructure Leads",
@@ -389,7 +395,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   title: "Cross-Ministerial Interoperability Grid & National API Gateway",
   subtitle: "Cabinet Secretariat (Govt. of India) · Unifying government services through a high-throughput, secure national API gateway and distributed data exchange layer.",
   category: "GovTech & Enterprise",
-  image: "${import.meta.env.BASE_URL}case_study_ai_copilot_1793434636073.jpg",
+  image: apiImg,
   timeline: "8-Month · Scale & Integration Phase",
   role: "Technical Product Owner / Deputy Field Officer (Tech)",
   team: "Systems Architects, API Engineers, Security Officers & Inter-Agency Stakeholders",
@@ -456,7 +462,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   title: "National Zero-Trust Cybersecurity & Automated Threat Remediation Engine",
   subtitle: "Cabinet Secretariat (Govt. of India) · Architecting a comprehensive zero-trust security overhaul and automated threat mitigation framework for critical national assets.",
   category: "Security & Cryptography",
-  image: "${import.meta.env.BASE_URL}case_study_ai_copilot_1793434636073.jpg",
+  image: threatImg,
   timeline: "12-Month · Security Modernization & Governance Phase",
   role: "Technical Product Owner / Deputy Field Officer (Tech)",
   team: "Cybersecurity Specialists, Red Team Auditors, DevOps Engineers & Executive Leadership",
@@ -523,74 +529,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   title: "Sovereign Air-Gapped Multi-Cloud & Edge Containerization Platform (GovCloud-Mesh)",
   subtitle: "Cabinet Secretariat (Govt. of India) · Architecting a sovereign, containerized cloud-native platform for resilient edge deployments and air-gapped data centers.",
   category: "GovTech & Enterprise",
-  image: "${import.meta.env.BASE_URL}case_study_ai_copilot_1793434636073.jpg",
-  timeline: "3-Month · Sovereign Infrastructure Scaling",
-  role: "Technical Product Owner / Deputy Field Officer (Tech)",
-  team: "Cloud Architects, Kubernetes Engineers, Edge Operations & Infrastructure Teams",
-  summary: "Designed and launched a sovereign, air-gapped multi-cluster Kubernetes and edge containerization platform that standardizes software deployments across secure sovereign data centers and remote field nodes with zero external cloud dependencies.",
-  keyMetrics: [
-    { label: "Deployment Velocity", value: "10x Faster", context: "Reduction in release cycle time via automated CI/CD" },
-    { label: "Infrastructure Cost", value: "-45%", context: "Optimized resource utilization across sovereign clusters" },
-    { label: "Cloud Dependency", value: "0% External", context: "Fully air-gapped self-hosted sovereign control plane" },
-    { label: "Node Availability", value: "99.999%", context: "Resilient edge orchestration under network partition" }
-  ],
-  theProblem: {
-    headline: "Overcoming Deployment Friction in Isolated Air-Gapped Sovereign Environments",
-    description: "Deploying updates and scaling applications across disparate, highly secure government data centers and field nodes was bottlenecked by manual configuration, legacy virtualization overhead, and strict air-gapped isolation from public cloud providers.",
-    painPoints: [
-      "Rigid infrastructure silos: Manual provisioning of bare-metal servers led to configuration drift and lengthy release cycles.",
-      "Air-gapped deployment friction: Inability to utilize standard public cloud tooling due to strict data sovereignty and security isolation mandates.",
-      "Edge resilience challenges: Remote nodes experienced intermittent connectivity issues without automated self-healing orchestration."
-    ],
-    marketOpportunity: "Build a sovereign, containerized multi-cluster Kubernetes platform with automated GitOps pipelines to ensure uniform, high-velocity deployments across all secure government environments."
-  },
-  theStrategy: {
-    discovery: "Interviewed infrastructure operators and field deployment teams to pinpoint deployment friction, configuration drift, and edge synchronization bottlenecks.",
-    framework: "RICE & Security Impact Matrix",
-    frameworkDetails: [
-      { item: "Air-Gapped Kubernetes Multi-Cluster Control Plane", reach: 90000, impact: 3, confidence: 95, effort: 5, score: 5130, note: "P0 Core: Sovereign container orchestration backbone" },
-      { item: "Automated GitOps (ArgoCD) & Secure CI/CD Pipelines", reach: 70000, impact: 3, confidence: 90, effort: 4, score: 4725, note: "P0 Velocity: Declarative automated sovereign deployments" },
-      { item: "Edge Mesh Synchronization & Self-Healing Policies", reach: 50000, impact: 2, confidence: 90, effort: 4, score: 2250, note: "P1 Reliability: Autonomous recovery during network partitions" },
-      { item: "Infrastructure Cost & Resource Telemetry Dashboard", reach: 30000, impact: 2, confidence: 85, effort: 3, score: 1445, note: "P1 Governance: Real-time sovereign compute optimization" }
-    ],
-    mvpScoping: "Phased rollout: Established core air-gapped Kubernetes clusters and GitOps pipelines early on, followed by deploying edge mesh synchronization and automated self-healing controllers.",
-    tradeoffs: "Opted for lightweight, open-source CNCF-compliant container tooling (K3s/Kubernetes) over heavy proprietary virtualization to guarantee complete sovereign code ownership and zero vendor lock-in."
-  },
-  theSolution: {
-    architecture: "Air-gapped multi-cluster Kubernetes orchestration layer managed via declarative GitOps (ArgoCD), service mesh networking, and automated edge synchronization controllers.",
-    executionHighlights: [
-      "Authored comprehensive cloud-native product specifications and deployment governance standards for sovereign engineering squads.",
-      "Engineered secure offline container registry mirroring pipelines to enable seamless dependency updates within air-gapped perimeters.",
-      "Instituted automated rollback and canary deployment strategies to eliminate human error during critical infrastructure releases."
-    ],
-    designDecisions: [
-      "Designed an intuitive cluster health and deployment status dashboard providing operators with real-time visibility across geographically distributed nodes.",
-      "Standardized immutable infrastructure patterns to prevent manual runtime configuration modifications."
-    ],
-    engCollaboration: "Partnered closely with platform engineering and DevOps squads to optimize container resource footprints and harden cluster security baselines."
-  },
-  theImpact: {
-    businessResults: [
-      "Accelerated software release velocity by 10x through automated GitOps CI/CD pipelines.",
-      "Reduced sovereign compute infrastructure overhead by 45% via optimized multi-cluster resource packing.",
-      "Achieved 99.999% edge node availability with autonomous self-healing during simulated network partitions.",
-      "Established a future-proof, 100% air-gapped cloud-native standard for all subsequent government technical initiatives."
-    ],
-    learnings: "Modern infrastructure at scale requires treating infrastructure as code—even within the most secure, air-gapped sovereign environments.",
-    testimonial: {
-      quote: "The sovereign container platform modernized our deployment velocity and infrastructure resilience from the ground up.",
-      author: "Head of Infrastructure Engineering",
-      role: "Sovereign Systems",
-      company: "Cabinet Secretariat (Govt. of India)"
-    }
-  }
-},
-  {
-  id: "cabinet-secretariat-sovereign-cloud",
-  title: "Sovereign Air-Gapped Multi-Cloud & Edge Containerization Platform (GovCloud-Mesh)",
-  subtitle: "Cabinet Secretariat (Govt. of India) · Architecting a sovereign, containerized cloud-native platform for resilient edge deployments and air-gapped data centers.",
-  category: "GovTech & Enterprise",
-  image: "${import.meta.env.BASE_URL}case_study_ai_copilot_1793434636073.jpg",
+  image: cloudImg,
   timeline: "3-Month · Sovereign Infrastructure Scaling",
   role: "Technical Product Owner / Deputy Field Officer (Tech)",
   team: "Cloud Architects, Kubernetes Engineers, Edge Operations & Infrastructure Teams",
@@ -715,6 +654,73 @@ export const CASE_STUDIES: CaseStudy[] = [
       author: "Project Delivery Lead",
       role: "Enterprise Solutions Group",
       company: "Tata Consultancy Services"
+    }
+  }
+},
+{
+  id: "devrev-ai-crm-workflow",
+  title: "DevRev: AI-Powered CRM & Developer Workflow Optimization",
+  subtitle: "UX / UI Engineering & Product Discovery · Redesigning developer-customer feedback loops and AI-assisted triage.",
+  category: "AI & Data",
+  image: fintechImg,
+  timeline: "4-Month · Product Discovery & UX Engineering Sprint",
+  role: "Lead UX / UI Engineer & Product Collaborator",
+  team: "Product Managers, Frontend Engineers, AI Researchers & Design Leads",
+  summary: "Spearheaded the product discovery and UX engineering for an AI-native customer support and developer workflow platform, closing the operational gap between customer-facing tickets and engineering code repositories.",
+  keyMetrics: [
+    { label: "Triage Time", value: "-65%", context: "Reduction in manual issue routing and classification" },
+    { label: "Feedback Resolution", value: "3.4x Faster", context: "Acceleration from customer ticket to code commit" },
+    { label: "User Adoption", value: "88%", context: "Daily active engagement across engineering cohorts" },
+    { label: "Context Switching", value: "-50%", context: "Unified customer feedback inside developer tools" }
+  ],
+  theProblem: {
+    headline: "Bridging the Chasm Between Customer Conversations and Engineering Backlogs",
+    description: "SaaS companies struggled with fragmented feedback loops where customer success teams used CRM tools while engineers lived in GitHub/Jira, creating massive information silos and slow response times.",
+    painPoints: [
+      "Context fragmentation: Customer complaints and technical bug reports lived in completely disconnected silos, requiring manual translation.",
+      "Triage fatigue: Engineering teams spent hours sorting through duplicate, poorly described support tickets instead of building product.",
+      "Opaque customer impact: Product teams lacked real-time visibility into which bugs or feature requests were causing the most customer churn."
+    ],
+    marketOpportunity: "Design an AI-powered developer-centric CRM that automatically ingests, clusters, and maps customer support telemetry directly to engineering work items."
+  },
+  theStrategy: {
+    discovery: "Conducted user interviews with engineering leaders and support managers to map out friction points in cross-functional ticket handoffs and triage workflows.",
+    framework: "RICE & User Impact Matrix",
+    frameworkDetails: [
+      { item: "AI-Assisted Issue Triage & Semantic Clustering", reach: 45000, impact: 3, confidence: 90, effort: 4, score: 3037, note: "P0 Core: Automated grouping of incoming support tickets" },
+      { item: "Unified Developer-CRM Command Center UI", reach: 35000, impact: 3, confidence: 85, effort: 4, score: 2231, note: "P0 UX: Bridging support insights into engineering views" },
+      { item: "Real-Time Feedback-to-Code Traceability Links", reach: 25000, impact: 2, confidence: 90, effort: 3, score: 1500, note: "P1 Visibility: Direct links from commits back to users" },
+      { item: "Customizable AI Prompt Playground for Support Teams", reach: 15000, impact: 2, confidence: 85, effort: 3, score: 850, note: "P2 Customization: Fine-tuning auto-responses" }
+    ],
+    mvpScoping: "Phased 4-month delivery: Months 1–2 focused on core UI component libraries and AI semantic clustering architecture; Months 3–4 executed user testing and dashboard integration.",
+    tradeoffs: "Prioritized a clean, low-latency UI over overly complex customization panels to ensure zero cognitive overhead for busy engineers during code reviews."
+  },
+  theSolution: {
+    architecture: "React/TypeScript frontend component library backed by real-time WebSocket data layers, integrated with vector search engines for semantic ticket clustering and AI summarization.",
+    executionHighlights: [
+      "Engineered high-performance, responsive UI components optimized for rapid triage, keyboard navigation, and zero-lag filtering.",
+      "Designed intuitive AI copilot summaries that distill 50+ chat messages into a single actionable engineering issue description.",
+      "Established rigorous design system guidelines ensuring visual consistency and accessibility across all workspace modules."
+    ],
+    designDecisions: [
+      "Implemented a split-pane layout keeping customer context visible side-by-side with code commit statuses to eliminate window switching.",
+      "Utilized subtle color-coded priority badges and confidence scores to make AI-recommended triage suggestions instantly scannable."
+    ],
+    engCollaboration: "Partnered closely with backend engineers and product designers to translate complex data models into seamless, fluid user workflows."
+  },
+  theImpact: {
+    businessResults: [
+      "Cut manual issue triage and classification time by 65%.",
+      "Accelerated the end-to-end feedback resolution cycle by 3.4x.",
+      "Achieved an 88% daily active user adoption rate among engineering cohorts.",
+      "Eliminated 50% of context switching by unifying customer feedback directly inside developer environments."
+    ],
+    learnings: "When building AI developer tools, the AI must assist rather than interrupt; seamless integration into existing developer habits drives long-term adoption.",
+    testimonial: {
+      quote: "The UX architecture and product discovery delivered by Aishwarya transformed how our engineering and support teams collaborate, bridging the gap between users and code.",
+      author: "Head of Product Design",
+      role: "Product & Engineering",
+      company: "DevRev"
     }
   }
 }

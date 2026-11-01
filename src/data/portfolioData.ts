@@ -1,3 +1,4 @@
+
 export interface CaseStudy {
   id: string;
   title: string;
@@ -118,7 +119,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: "Critical Sovereign Infrastructure: 0-to-1 High-Availability Platform",
     subtitle: "Cabinet Secretariat (Govt. of India) · Leading technical product ownership for population-scale, regulatory-compliant government infrastructure.",
     category: "GovTech & Enterprise",
-    image: "/src/assets/images/case_study_ai_copilot_1793434636073.jpg",
+    image: "/images/case_study_ai_copilot_1793434636073.jpg",
     timeline: "3 month · 0-to-1 Architecture & Scale",
     role: "Technical Product Owner / Deputy Field Officer (Tech)",
     team: "Multi-Disciplinary Technical Specialists, Systems Engineers, Security & Operations Teams",
@@ -185,7 +186,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: "National Inter-Departmental LLM Knowledge Graph (GovAI-RAG Engine)",
     subtitle: "Cabinet Secretariat (Govt. of India) · Led the development of GovAI-RAG Engine, a sovereign Generative AI and semantic search engine for cross-ministerial intelligence synthesis.",
     category: "AI & Data",
-    image: "/src/assets/images/case_study_ai_copilot_1793434636073.jpg",
+    image: "/images/case_study_ai_copilot_1793434636073.jpg",
     timeline: "5-Month · Deep Engineering Sprint",
     role: "Technical Product Owner / Deputy Field Officer (Tech)",
     team: "AI Researchers, Data Engineers, Security Compliance & Operations Teams",
